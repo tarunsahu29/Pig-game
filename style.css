@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: 'Varela Round', sans-serif;
+  color: #333;
+  font-weight: 400;
+  line-height: 1;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  border-radius: 3.2rem;
+  padding: 1rem 2rem;
+  letter-spacing: 0.01rem;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.897);
+  left: 50%;
+  top: 50%;
+  font-size: 1.6rem;
+  color: #555;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.btn:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.new-game {
+  transform: translate(-50%, -860%);
+}
+
+.new-game:active {
+  transform: translate(-50%, -850%);
+}
+
+.dice {
+  transform: translate(-50%, -170%);
+}
+
+.dice:active {
+  transform: translate(-50%, -160%);
+}
+
+.hold {
+  transform: translate(-50%, -20%);
+}
+
+.hold:active {
+  transform: translate(-50%, -10%);
+}
+
+.dice-img {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  border-radius: 0.8rem;
+  max-width: 90rem;
+  display: flex;
+  margin: 10rem auto;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.sub-container {
+  flex: 1;
+  text-align: center;
+  padding: 8rem 9.6rem;
+  background-color: rgba(255, 255, 255, 0.479);
+  transition: all 0.75s;
+  /* backdrop-filter: blur(200px); */
+}
+
+.highlight {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.highlight-black {
+  background-color: #000;
+}
+
+.new-current-box {
+  opacity: 80%;
+}
+
+.player {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.player-active {
+  color: rgb(220, 28, 92);
+}
+
+.score {
+  font-size: 6.2rem;
+  color: rgb(220, 28, 92);
+  margin-bottom: 12.8rem;
+}
+
+.current-box {
+  display: inline-block;
+  background-color: rgb(220, 28, 92);
+  padding: 2.4rem 5.2rem;
+  border-radius: 0.8rem;
+  transition: all 0.75s;
+}
+
+.current-text {
+  color: rgba(238, 227, 227, 0.86);
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.current-score {
+  color: #fff;
+  font-size: 3.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17%;
+  background-color: #ffffffd2;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.winner{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
